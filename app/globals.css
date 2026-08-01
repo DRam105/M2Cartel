@@ -143,10 +143,6 @@ body::after{
   font-family:var(--mono);font-size:20px;color:var(--green);animation:bob 1.6s infinite}
 @keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
 
-/* ---------- floating money (hero ambient) ---------- */
-.bill-fx{position:absolute;font-size:22px;z-index:3;opacity:.8;pointer-events:none;animation:drift linear infinite}
-@keyframes drift{0%{transform:translateY(-10%) rotate(0)}100%{transform:translateY(110%) rotate(40deg)}}
-
 /* ---------- content drawer ---------- */
 .scrim{position:fixed;inset:0;background:rgba(3,10,7,.6);backdrop-filter:blur(3px);z-index:140;opacity:0;visibility:hidden;transition:.3s}
 .scrim.open{opacity:1;visibility:visible}

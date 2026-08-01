@@ -19,7 +19,6 @@ import {
 import { PANELS } from "@/content/panels";
 
 const HOVER_SELECTOR = ".hot,a,button,.tick,.close,.x,.menu-x";
-const MONEY = [0, 1, 2, 3, 4];
 
 export default function CartelExperience() {
   const [activePanel, setActivePanel] = useState<PanelId | null>(null);
@@ -239,30 +238,13 @@ export default function CartelExperience() {
                 }
               >
                 {sceneImage ? (
-                  <>
-                    <Image
-                      src={sceneImage.src}
-                      alt={sceneImage.alt}
-                      fill
-                      priority={sc.kind === "hero"}
-                      sizes="(max-width: 900px) 96vw, 80vh"
-                    />
-                    {sc.kind === "hero" &&
-                      MONEY.map((n) => (
-                        <div
-                          key={n}
-                          className="bill-fx"
-                          style={{
-                            left: `${8 + n * 20}%`,
-                            animationDuration: `${9 + n * 3}s`,
-                            animationDelay: `${-n * 2}s`,
-                            fontSize: `${16 + n * 3}px`,
-                          }}
-                        >
-                          💵
-                        </div>
-                      ))}
-                  </>
+                  <Image
+                    src={sceneImage.src}
+                    alt={sceneImage.alt}
+                    fill
+                    priority={sc.kind === "hero"}
+                    sizes="(max-width: 900px) 96vw, 80vh"
+                  />
                 ) : sc.kind === "room" ? (
                   <div className={`room ${sc.theme}`}>
                     <span className="no">{sc.no}</span>
