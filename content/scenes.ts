@@ -134,15 +134,15 @@ export const SCENES: Scene[] = [
     title: ["JEKYLL", "ISLAND"],
     sub: "Where the Fed was dreamed up in 1910",
     image: {
-      src: "/images/scene2-jekyll-c.png",
-      alt: "Jekyll Island as a moody purple comic scene at night — the historic Jekyll Island Club hotel and clock tower flying an M2 flag, a floating island carrying the White House, an M2 tower block, and PRIVATE KEEP OUT / DANGER DEEP WATER signs above dark flooded water with a skull and an XXX bottle.",
+      src: "/images/scene2-jekyll-d.png",
+      alt: "Jekyll Island as a moody purple comic scene at night — the historic Jekyll Island Club hotel and clock tower flying an M2 flag, a floating island carrying the White House, an M2 tower block, and PRIVATE KEEP OUT / DANGER DEEP WATER signs above dark flooded water. In the foreground, a Bruce Lee figure with nunchucks and a Kill Bill 'Bride' figure in a yellow tracksuit holding a katana wade through the water.",
       ar: 1402 / 1122, // 1.25 — 5:4 art, matches the standard frame (no crop)
     },
     hotspots: [
       // On the historic hotel / clock tower flying the M2 flag (center-left).
-      { box: { left: "24%", top: "10%", width: "16%", height: "48%" }, action: { type: "panel", panel: "fed" }, label: "Open How the Federal Reserve Works", tip: "The Federal Reserve →" },
+      { box: { left: "24%", top: "9%", width: "16%", height: "37%" }, action: { type: "panel", panel: "fed" }, label: "Open How the Federal Reserve Works", tip: "The Federal Reserve →" },
       // Hidden: the floating island carrying the White House (upper-right).
-      { box: { left: "60%", top: "8%", width: "33%", height: "34%" }, action: { type: "panel", panel: "creature" }, label: "Hidden: the creature", tip: "?", secret: true },
+      { box: { left: "60%", top: "8%", width: "33%", height: "32%" }, action: { type: "panel", panel: "creature" }, label: "Hidden: the creature", tip: "?", secret: true },
     ],
   },
   {
