@@ -337,6 +337,7 @@ function HotspotButton({
     "hot",
     hero ? "pulse" : "pin",
     hotspot.secret ? "secret" : "",
+    hotspot.tipBelow ? "below" : "",
   ]
     .filter(Boolean)
     .join(" ");

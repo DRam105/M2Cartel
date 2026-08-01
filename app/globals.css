@@ -120,6 +120,9 @@ body::after{
   background:var(--acid);padding:3px 12px;border-radius:2px;opacity:0;pointer-events:none;transition:.18s;
   box-shadow:3px 3px 0 rgba(0,0,0,.4)}
 .hot:hover .tip,.hot:focus-visible .tip{opacity:1;transform:translateX(-50%)}
+/* tooltip below the hotspot (for spots near the top edge) */
+.hot.below .tip{top:calc(100% + 8px);bottom:auto;transform:translateX(-50%) translateY(-6px)}
+.hot.below:hover .tip,.hot.below:focus-visible .tip{transform:translateX(-50%)}
 .hot.secret .halo{border-style:dotted}
 .hot.secret .tip{background:var(--red);color:var(--paper)}
 /* room hotspot marker (visible pin on placeholder scenes) */

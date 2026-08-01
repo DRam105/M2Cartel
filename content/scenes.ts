@@ -34,6 +34,8 @@ export type Hotspot = {
   tip: string;
   /** Renders the dotted/red "secret" styling. */
   secret?: boolean;
+  /** Show the tooltip below the hotspot instead of above (for top-edge spots). */
+  tipBelow?: boolean;
 };
 
 export type SceneImage = {
@@ -113,11 +115,11 @@ export const SCENES: Scene[] = [
       ar: 1120 / 896, // 1.25
     },
     hotspots: [
-      { box: { left: "67%", top: "6%", width: "31%", height: "29%" }, action: { type: "panel", panel: "doctrine" }, label: "Open The Doctrine", tip: "The Doctrine →" },
+      { box: { left: "67%", top: "6%", width: "31%", height: "29%" }, action: { type: "panel", panel: "doctrine" }, label: "Open The Doctrine", tip: "The Doctrine ↑", tipBelow: true },
       { box: { left: "11%", top: "26%", width: "31%", height: "17%" }, action: { type: "goto", to: "s2" }, label: "Dive to Jekyll Island", tip: "Jekyll Island ↓" },
       { box: { left: "20%", top: "56%", width: "40%", height: "39%" }, action: { type: "goto", to: "s3" }, label: "Dive to The Bill", tip: "The Money ↓" },
       { box: { left: "73%", top: "61%", width: "9%", height: "10%" }, action: { type: "panel", panel: "about" }, label: "Open Background / About", tip: "Who I Am →" },
-      { box: { left: "16%", top: "2%", width: "11%", height: "10%" }, action: { type: "panel", panel: "notes" }, label: "Open Personal Finance notes", tip: "Sound Money →" },
+      { box: { left: "16%", top: "2%", width: "11%", height: "10%" }, action: { type: "panel", panel: "notes" }, label: "Open Personal Finance notes", tip: "Sound Money ↑", tipBelow: true },
       { box: { left: "47%", top: "20%", width: "19%", height: "11%" }, action: { type: "secret" }, label: "Hidden easter egg", tip: "?", secret: true },
     ],
   },
