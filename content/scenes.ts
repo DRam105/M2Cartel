@@ -158,13 +158,13 @@ export const SCENES: Scene[] = [
     title: ["THE", "BILL"],
     sub: "A caricature president · inflation & the money supply",
     image: {
-      src: "/images/scene3-bill-d.png",
-      alt: "An ornate skull-framed cork board of caricatured US bills — $1 Washington, $5 Lincoln, $10 Hamilton, $20 Jackson, $50 Grant, a $2 with a Gorillaz character, and a central $100 Franklin marked 'RATM' — pinned among ephemera: a 'G CARTEL' crest, 'IN KAYO WE TRUST' and 'KAYO' tags, a 'Float like a butterfly, sting like a bee' Ali photo, a Muhammad Ali vs George Foreman fight ticket, a Federal Reserve 'EVOL EMPLOYEE' badge, a VAULT ACCESS LEVEL 7 card, VAULT 23 keys, and a 'CALL KADEN' note.",
-      ar: 1402 / 1122, // 1.25 — resized to 5:4, matches the standard frame
+      src: "/images/scene3-bill-e.png",
+      alt: "An ornate skull-framed cork board of caricatured US bills — $1 Washington, $5 Lincoln, $10 Hamilton, $20 Jackson, $50 Grant, a $2 with a Gorillaz character, and a central $100 Franklin marked 'RATM' — pinned among ephemera: a 'G CARTEL' crest, 'KAYO' tag, a Muhammad Ali boxing photo, a 'Rumble in the Jungle' Ali vs Foreman ticket (Kinshasa, 1974), a 'John 3:16 / Hebrews 13:8' note, a group photo, a Federal Reserve 'EVOL EMPLOYEE' badge, a VAULT ACCESS LEVEL 7 card, VAULT 23 keys, and a 'CALL KADEN' note.",
+      ar: 1402 / 1122, // 1.25 — 5:4, matches the standard frame
     },
     hotspots: [
       // The central $100 bill (caricature Franklin / RATM).
-      { box: { left: "35%", top: "52%", width: "25%", height: "13%" }, action: { type: "panel", panel: "bill" }, label: "Open Inflation and the Money Supply", tip: "Inflation & M2 →" },
+      { box: { left: "37%", top: "51%", width: "22%", height: "13%" }, action: { type: "panel", panel: "bill" }, label: "Open Inflation and the Money Supply", tip: "Inflation & M2 →" },
     ],
   },
   {
