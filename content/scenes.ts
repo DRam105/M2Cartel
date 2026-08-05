@@ -253,9 +253,9 @@ export const SCENES: Scene[] = [
     title: ["THE", "SCORECARD"],
     sub: "The tally — where the numbers land",
     image: {
-      src: "/images/scene7-scorecard.png",
-      alt: "The M2 Financial Scorecard — a green-on-black grunge worksheet with a Balance Sheet (Assets, Liabilities, Equity) and a P&L (Income, Expenses, Net Income), plus the slogans 'OWN THE GAME', 'THE RICH DON'T WORK FOR MONEY', 'BUILD ASSETS / CREATE FREEDOM / LEAVE A LEGACY', and 'your scorecard will show you if you are poor, middle class or rich'.",
-      ar: 1402 / 1122, // 1.25 — 5:4, matches the standard frame
+      src: "/images/scene7-scorecard-b.png",
+      alt: "The M2 Financial Scorecard — a green-on-black grunge worksheet with a Balance Sheet (Assets, Liabilities, Total Equity (Net Worth)) and a P&L (Income, Expenses, Net Income (Cash Flow)), plus the slogans 'OWN THE GAME', 'THE RICH DON'T WORK FOR MONEY', 'BUILD ASSETS / CREATE FREEDOM / LEAVE A LEGACY', and 'your scorecard will show you if you are poor, middle class or rich'.",
+      ar: 1403 / 1121, // 1.25 — 5:4, matches the standard frame
     },
     hotspots: [
       // Balance Sheet sections (left column).
