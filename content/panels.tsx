@@ -280,4 +280,24 @@ export const PANELS: Record<PanelId, Panel> = {
       </>
     ),
   },
+
+  manifesto: {
+    eyebrow: "Scene 06 · The Manifesto",
+    body: (
+      <>
+        <h3>
+          CAPITALIST <span>MANIFESTO</span>
+        </h3>
+        <div className="def">
+          <div className="term">The rich don&apos;t work for money</div>
+          <div className="pos">first principle</div>
+          <p>
+            Money works for them. Stop trading hours for dollars and start
+            owning assets that pay you whether you show up or not.
+          </p>
+        </div>
+        <span className="ph">[ THE MANIFESTO — your tenets / principles ]</span>
+      </>
+    ),
+  },
 };

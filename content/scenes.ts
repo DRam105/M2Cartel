@@ -16,7 +16,8 @@ export type PanelId =
   | "ventures"
   | "realestate"
   | "vault"
-  | "scorecard";
+  | "scorecard"
+  | "manifesto";
 
 /** What a hotspot does when clicked. */
 export type HotspotAction =
@@ -118,7 +119,7 @@ export const SCENES: Scene[] = [
       { box: { left: "67%", top: "6%", width: "31%", height: "29%" }, action: { type: "panel", panel: "doctrine" }, label: "Open The Doctrine", tip: "The Doctrine ↑", tipBelow: true },
       { box: { left: "11%", top: "26%", width: "31%", height: "17%" }, action: { type: "goto", to: "s2" }, label: "Dive to Jekyll Island", tip: "Jekyll Island ↓" },
       { box: { left: "20%", top: "56%", width: "40%", height: "39%" }, action: { type: "goto", to: "s3" }, label: "Dive to The Bill", tip: "The Money ↓" },
-      { box: { left: "73%", top: "61%", width: "9%", height: "10%" }, action: { type: "panel", panel: "about" }, label: "Open Background / About", tip: "Who I Am →" },
+      { box: { left: "73%", top: "61%", width: "9%", height: "10%" }, action: { type: "panel", panel: "about" }, label: "Open Background / About", tip: "Who I Am ↓" },
       { box: { left: "16%", top: "2%", width: "11%", height: "10%" }, action: { type: "panel", panel: "notes" }, label: "Open Personal Finance notes", tip: "Sound Money ↑", tipBelow: true },
       { box: { left: "47%", top: "20%", width: "19%", height: "11%" }, action: { type: "secret" }, label: "Hidden easter egg", tip: "?", secret: true },
     ],
@@ -142,7 +143,7 @@ export const SCENES: Scene[] = [
     },
     hotspots: [
       // On the historic hotel / clock tower flying the M2 flag (center-left).
-      { box: { left: "24%", top: "9%", width: "16%", height: "37%" }, action: { type: "panel", panel: "fed" }, label: "Open How the Federal Reserve Works", tip: "The Federal Reserve →" },
+      { box: { left: "24%", top: "9%", width: "16%", height: "37%" }, action: { type: "panel", panel: "fed" }, label: "Open How the Federal Reserve Works", tip: "The Federal Reserve ↓" },
       // Hidden: the floating island carrying the White House (upper-right).
       { box: { left: "60%", top: "8%", width: "33%", height: "32%" }, action: { type: "panel", panel: "creature" }, label: "Hidden: the creature", tip: "?", secret: true },
     ],
@@ -166,7 +167,7 @@ export const SCENES: Scene[] = [
     },
     hotspots: [
       // The central $100 bill (caricature Franklin / RATM).
-      { box: { left: "37%", top: "51%", width: "22%", height: "13%" }, action: { type: "panel", panel: "bill" }, label: "Open Inflation and the Money Supply", tip: "Inflation & M2 →" },
+      { box: { left: "37%", top: "51%", width: "22%", height: "13%" }, action: { type: "panel", panel: "bill" }, label: "Open Inflation and the Money Supply", tip: "Inflation & M2 ↓" },
     ],
   },
   {
@@ -188,7 +189,7 @@ export const SCENES: Scene[] = [
     },
     hotspots: [
       // Central "My Guys Pest Control" sign — entry to the ventures directory.
-      { box: { left: "37%", top: "46%", width: "25%", height: "13%" }, action: { type: "panel", panel: "ventures" }, label: "Open The Ventures", tip: "The Ventures →" },
+      { box: { left: "37%", top: "46%", width: "25%", height: "13%" }, action: { type: "panel", panel: "ventures" }, label: "Open The Ventures", tip: "The Ventures ↓" },
     ],
   },
   {
@@ -210,7 +211,7 @@ export const SCENES: Scene[] = [
     },
     hotspots: [
       // The central flagship home (14603) — entry to the portfolio.
-      { box: { left: "42%", top: "36%", width: "24%", height: "26%" }, action: { type: "panel", panel: "realestate" }, label: "Open the real estate portfolio", tip: "The Portfolio →" },
+      { box: { left: "42%", top: "36%", width: "24%", height: "26%" }, action: { type: "panel", panel: "realestate" }, label: "Open the real estate portfolio", tip: "The Portfolio ↓" },
     ],
   },
   {
@@ -231,8 +232,10 @@ export const SCENES: Scene[] = [
       ar: 1402 / 1122, // 1.25 — 5:4, matches the standard frame
     },
     hotspots: [
+      // The manifesto poster (center-top) — the Capitalist Manifesto.
+      { box: { left: "42%", top: "11%", width: "28%", height: "36%" }, action: { type: "panel", panel: "manifesto" }, label: "Open the Capitalist Manifesto", tip: "Capitalist Manifesto" },
       // The "BUSINESS ENTITIES" ledger book (right) — the ledger & contact.
-      { box: { left: "79%", top: "35%", width: "20%", height: "28%" }, action: { type: "panel", panel: "vault" }, label: "Open the ledger and contact", tip: "The Ledger →" },
+      { box: { left: "79%", top: "35%", width: "20%", height: "28%" }, action: { type: "panel", panel: "vault" }, label: "Open the ledger and contact", tip: "The Ledger ↓" },
       // Hidden: the skull graffiti on the vault door (left).
       { box: { left: "9%", top: "50%", width: "9%", height: "15%" }, action: { type: "secret" }, label: "Hidden easter egg", tip: "?", secret: true },
     ],
@@ -255,8 +258,13 @@ export const SCENES: Scene[] = [
       ar: 1402 / 1122, // 1.25 — 5:4, matches the standard frame
     },
     hotspots: [
-      // The "FINANCIAL SCORECARD" title banner.
-      { box: { left: "24%", top: "4%", width: "54%", height: "7%" }, action: { type: "panel", panel: "scorecard" }, label: "Open the Scorecard", tip: "The Scorecard →" },
+      // Balance Sheet sections (left column).
+      { box: { left: "14%", top: "18%", width: "33%", height: "27%" }, action: { type: "panel", panel: "scorecard" }, label: "Scorecard — Assets", tip: "Assets" },
+      { box: { left: "14%", top: "47%", width: "33%", height: "19%" }, action: { type: "panel", panel: "scorecard" }, label: "Scorecard — Liabilities", tip: "Liabilities" },
+      { box: { left: "14%", top: "72%", width: "33%", height: "15%" }, action: { type: "panel", panel: "scorecard" }, label: "Scorecard — Equity", tip: "Equity" },
+      // P&L sections (right column).
+      { box: { left: "52%", top: "18%", width: "33%", height: "23%" }, action: { type: "panel", panel: "scorecard" }, label: "Scorecard — Income", tip: "Income" },
+      { box: { left: "52%", top: "44%", width: "33%", height: "35%" }, action: { type: "panel", panel: "scorecard" }, label: "Scorecard — Expenses", tip: "Expenses" },
     ],
   },
 ];
